@@ -1,0 +1,106 @@
+/*最外面设置弹性布局*/
+.detail{
+  width:750rpx;
+  height:1201rpx;
+  display:flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.weather{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding:25rpx 25rpx 25rpx 25rpx
+}
+/*第一排头像*/
+.touxiang{
+  width:122rpx;
+  height:122rpx;
+  padding-right: 10rpx;
+}
+.weather-left{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+.weater-left-date{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding-top:10rpx;
+}
+.weater-left-date-d{
+  font-size: 25rpx;
+  font-family: MicroSoft YaHei;
+}
+.weater-left-date-s{
+  font-family: MicroSoft YaHei;
+}
+/*第一排右侧多云*/
+.duoyun{
+  width:124rpx;
+  height:84rpx;
+}
+.weather-right{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  text-align: center;
+}
+.weather-right-con{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.weather-right-con-du{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.weather-right-con-du{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.weather-pic{
+  height:30rpx;
+  width:30rpx;
+  margin: 0 auto;
+}
+.weather-bg{
+  /*background: lightblue;*/
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  text-align: center;
+}
+.weather-right-con-tem{
+  font-size: 120rpx;
+  text-align: center;
+}
+.tx{
+  font-size: 20rpx;
+  color:#939393;
+}
+
+/*中间图片*/
+.centerPic{
+  width:723rpx;
+  height:700rpx;
+  margin:0 auto;
+}
+/*底部文字*/
+.bottomword{
+  font-family: MicroSoft YaHei;
+  font-size: 30rpx;
+  text-align: center;
+  padding-bottom: 40rpx;
+  color:#383838;
+}
+.erwei{
+  width:128rpx;
+  height:128rpx;
+}
+.berweima{
+   text-align: center;
+}

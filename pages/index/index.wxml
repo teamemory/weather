@@ -1,0 +1,169 @@
+<view class="index">
+  <!--背景图片-->
+  <image src="../../image/beijing.png" class="bg"></image>
+  <!--第一行city+date-->
+  <view class="city-weather">
+    <view class="city">
+      <text class="city-add">北京</text>
+      <text class="add">+</text>
+    </view>
+    <view class="date">
+      <text class="date-ps">星期一</text>
+      <text class="date-now">2017-06-05</text>
+    </view>
+  </view>
+  <!--第二行头像-->
+  <view class="biaoqing">
+    <image src="../../image/shouyebiaoqingtu.png" class='biaoqingpic'></image>
+  </view>
+  <!--两竖行文字-->
+  <view class="des" bindtap="houseModel">
+    <text class="desone">屋\n里\n蒸\n馒\n头</text>
+    <text class="destwo">屋\n外\n铁\n板\n烧</text>
+  </view>
+  <!--温度紫外线-->
+  
+    <view class="temRay">
+       <!--33摄氏度-->
+      <view class="tem">
+        <text class="temNum">33°</text>
+        <text class="weathercon">晴</text>
+      </view>
+       <!--三个标签-->
+      <view class="speed">
+        <view class="speedList">
+          <image src='../../image/feng.png' class="feng"></image>
+          <text class="speedfont">5级</text>
+          <text class="speedword">日出</text>
+        </view>
+        <view class="speedList">
+          <image src='../../image/shidu.png' class="shidu"></image>
+          <text class="speedfont">23%</text>
+          <text class="speedword">04:48</text>
+        </view>
+        <view class="speedList">
+          <image src='../../image/qiya.png' class="qiya"></image>
+          <text class="speedfont">1000hpa</text>
+          <text class="speedword">日落</text>
+        </view>
+        <view class="speedList speedLast">
+          <text class="speedword">19：38</text>
+        </view> 
+      </view>
+  </view>
+  <!--模态框图片-->
+  <view class="modelPic" style="display:{{show}}">
+    <view class="pic" >
+      <image src="../../image/tankuang.png" class="model" bindtap="showDetail"></image>
+      <image src="../../image/222.png" class="guanbi" bindtap="close"></image>
+    </view>
+  </view>
+</view>
+<!--另外一个页面-->
+<view class="index">
+  <!--背景图片-->
+  <image src="../../image/beijing.png" class="bg"></image>
+  <!--一周内天气-->
+  <view class="week-weather">
+    <text class="week-title">一周内天气</text>
+    <view class="show-weather">
+       <view class="weater-item">
+         <text class="weater-item-w">昨天</text>
+         <text class="weater-item-d">6/4</text>
+         <image src="../../image/taiyang.png" class="wpic"></image>
+       </view>
+       <view class="weater-item">
+         <text class="weater-item-w">今天</text>
+         <text class="weater-item-d">6/5</text>
+         <image src="../../image/duoyun.png" class="wpic"></image>
+       </view>
+       <view class="weater-item">
+         <text class="weater-item-w">周二</text>
+         <text class="weater-item-d">6/6</text>
+         <image src="../../image/yun.png" class="wpic"></image>
+       </view>
+       <view class="weater-item">
+        <text class="weater-item-w">周三</text>
+         <text class="weater-item-d">6/7</text>
+         <image src="../../image/taiyang.png" class="wpic"></image>
+       </view>
+       <view class="weater-item">
+         <text class="weater-item-w">周四</text>
+         <text class="weater-item-d">6/8</text>
+         <image src="../../image/yu.png" class="wpic"></image>
+       </view>
+       <view class="weater-item">
+         <text class="weater-item-w">周五</text>
+         <text class="weater-item-d">6/9</text>
+         <image src="../../image/yu.png" class="wpic"></image>
+       </view>
+    </view>
+    <view class="canvasshow">
+      <canvas style="width: 750rpx; height: 210rpx;" canvas-id="firstCanvas"></canvas>
+    </view>
+    <view class="weater-wind">
+       <view class="windf imp">
+          <image src="../../image/feng.png" class="feng"></image>
+          <text class="weater-item-w">北风</text>
+          <text class="weater-item-w">3-4级</text>
+       </view>
+       <view class="windf">
+           <image src="../../image/feng.png" class="feng"></image>
+          <text class="weater-item-w">西北风</text>
+          <text class="weater-item-w">3-4级</text>
+       </view>
+       <view class="windf">
+          <image src="../../image/feng.png" class="feng"></image>
+          <text class="weater-item-w">西北风</text>
+          <text class="weater-item-w">3级</text>
+       </view>
+       <view class="windf">
+          <image src="../../image/feng.png" class="feng"></image>
+          <text class="weater-item-w">北风</text>
+          <text class="weater-item-w">3级</text>
+       </view>
+       <view class="windf">
+         <image src="../../image/feng.png" class="feng"></image>
+          <text class="weater-item-w">北风</text>
+          <text class="weater-item-w">3级</text>
+       </view>
+       <view class="windf">
+         <image src="../../image/feng.png" class="feng"></image>
+          <text class="weater-item-w">北风</text>
+          <text class="weater-item-w">3级</text>
+       </view>
+    </view>
+  </view>
+  <!--天气小助手-->
+  <view class="weather-helper">
+    <text class="helper">
+      天气小助手
+    </text>
+     <view class="weather-pic">
+          <view class="wpi">
+             <image src="../../image/ray.png" class="wpimage"></image>
+             <text class="weater-item-w">紫外线强</text>
+          </view>
+          <view class="wpi">
+            <image src="../../image/chuxing.png" class="wpimage"></image>
+             <text class="weater-item-w">不宜出行</text>
+          </view>
+          <view class="wpi">
+            <image src="../../image/xiche.png" class="wpimage"></image>
+             <text class="weater-item-w">不宜洗车</text>
+          </view>
+          <view class="wpi">
+            <image src="../../image/ray.png" class="wpimage"></image>
+             <text class="weater-item-w">热</text>
+          </view>
+    </view>
+  </view>
+  <!--我要去吐槽-->
+  <view class="btn-container" >
+    <image src="../../image/anniu.png" class="btn" bindtap="complain"></image>
+  </view>
+  <!--我是有底线的-->
+  <view class="bworld">
+   ----------我是有底线的--------
+  </view>
+</view> 

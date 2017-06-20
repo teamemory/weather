@@ -1,0 +1,12 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/detail/detail",
+    "pages/complain/complain"
+  ],
+  "window":{
+    "navigationBarBackgroundColor": "#0A9CFB",
+    "navigationBarTitleText": "当日天气",
+    "navigationBarTextStyle":"#fff"
+  }
+}

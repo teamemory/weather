@@ -1,0 +1,113 @@
+<view class="index">
+  <!--背景图片-->
+  <image src="../../image/beijing.png" class="bg"></image>
+  <!--一周内天气-->
+  <view class="week-weather">
+    <text class="week-title">一周内天气</text>
+    <view class="show-weather">
+       <view class="weater-item">
+         <text class="weater-item-w">昨天</text>
+         <text class="weater-item-d">6/4</text>
+         <image src="../../image/taiyang.png" class="wpic"></image>
+       </view>
+       <view class="weater-item">
+         <text class="weater-item-w">今天</text>
+         <text class="weater-item-d">6/5</text>
+         <image src="../../image/duoyun.png" class="wpic"></image>
+       </view>
+       <view class="weater-item">
+         <text class="weater-item-w">周二</text>
+         <text class="weater-item-d">6/6</text>
+         <image src="../../image/yun.png" class="wpic"></image>
+       </view>
+       <view class="weater-item">
+        <text class="weater-item-w">周三</text>
+         <text class="weater-item-d">6/7</text>
+         <image src="../../image/taiyang.png" class="wpic"></image>
+       </view>
+       <view class="weater-item">
+         <text class="weater-item-w">周四</text>
+         <text class="weater-item-d">6/8</text>
+         <image src="../../image/yu.png" class="wpic"></image>
+       </view>
+       <view class="weater-item">
+         <text class="weater-item-w">周五</text>
+         <text class="weater-item-d">6/9</text>
+         <image src="../../image/yu.png" class="wpic"></image>
+       </view>
+    </view>
+    <view class="classname">
+       折线图
+    </view>
+    <view class="weater-wind">
+       <view class="windf">
+          <image src="../../image/feng.png" class="feng"></image>
+          <text class="weater-item-w">北风</text>
+          <text class="weater-item-w">3-4级</text>
+       </view>
+       <view class="windf">
+           <image src="../../image/feng.png" class="feng"></image>
+          <text class="weater-item-w">西北风</text>
+          <text class="weater-item-w">3-4级</text>
+       </view>
+       <view class="windf">
+          <image src="../../image/feng.png" class="feng"></image>
+          <text class="weater-item-w">西北风</text>
+          <text class="weater-item-w">3级</text>
+       </view>
+       <view class="windf">
+          <image src="../../image/feng.png" class="feng"></image>
+          <text class="weater-item-w">北风</text>
+          <text class="weater-item-w">3级</text>
+       </view>
+       <view class="windf">
+         <image src="../../image/feng.png" class="feng"></image>
+          <text class="weater-item-w">北风</text>
+          <text class="weater-item-w">3级</text>
+       </view>
+       <view class="windf">
+         <image src="../../image/feng.png" class="feng"></image>
+          <text class="weater-item-w">北风</text>
+          <text class="weater-item-w">3级</text>
+       </view>
+    </view>
+  </view>
+  <!--天气小助手-->
+  <view class="weather-helper">
+    <text class="helper">
+      天气小助手
+    </text>
+     <view class="weather-pic">
+          <view class="wpi">
+             <image src="../../image/ray.png" class="wpimage"></image>
+             <text class="weater-item-w">紫外线强</text>
+          </view>
+          <view class="wpi">
+            <image src="../../image/chuxing.png" class="wpimage"></image>
+             <text class="weater-item-w">不宜出行</text>
+          </view>
+          <view class="wpi">
+            <image src="../../image/xiche.png" class="wpimage"></image>
+             <text class="weater-item-w">不宜洗车</text>
+          </view>
+          <view class="wpi">
+            <image src="../../image/ray.png" class="wpimage"></image>
+             <text class="weater-item-w">热</text>
+          </view>
+    </view>
+  </view>
+  <!--我要去吐槽-->
+  <view class="btn-container" >
+    <image src="../../image/anniu.png" class="btn" bindtap="complain"></image>
+  </view>
+  <!--我是有底线的-->
+  <view class="bworld">
+   ----------我是有底线的--------
+  </view>
+
+  <!--模态框-->
+  <view class="modelcom" style="display: {{show}}">
+    <textarea placeholder="这个天气有点中毒!!!!!!" fixed="true" class="texta" placeholder-style="color:#C1BEBF" />
+    <image src="../../image/fabu.png" class="fabu"></image>
+  </view>
+</view>  

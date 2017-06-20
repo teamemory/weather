@@ -1,0 +1,308 @@
+.index{
+  position:relative;
+  height: 2402rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.bg{
+  width:750rpx;
+  height: 1201rpx;
+  position:absolute;
+  z-index: -100;
+}
+.city-weather{
+  display: flex;
+  flex-direction:row;
+  justify-content: space-between;
+  padding:20rpx 10rpx 0 15rpx;
+}
+.city{
+  color:#fff;
+  font-family: MicroSoft YaHei;
+  padding-top:-20rpx;
+  align-self:flex-start;
+}
+.city-add{
+  font-size: 40rpx; 
+}
+.add{
+  font-size: 50rpx;
+  color:#fff;
+}
+.date{
+  display: flex;
+  flex-direction: column;
+  padding-right: 20rpx;
+  color:#fff;
+  font-family: MicroSoft YaHei;
+}
+.date-ps{
+  align-self:flex-end;
+}
+.date-now{
+  font-size:30rpx;
+}
+.biaoqing{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  padding-right:20rpx;
+  margin-top:15rpx;
+}
+.biaoqingpic{
+  width:149rpx;
+  height:148rpx;
+}
+
+/*屋里蒸馒头*/
+.des{
+  position:relative;
+  color:#fff;
+  height:400rpx;
+  font-family: MicroSoft YaHei;
+  font-weight: 550;
+}
+.desone{
+  position:absolute;
+  right:25%;
+  top:-20rpx;
+}
+.destwo{
+  position:absolute;
+  right:35%;
+  top:30%;
+}
+
+/*33摄氏度*/
+
+.temRay{
+  color:#fff;
+  display: flex;
+  flex-direction: column;
+  flex:1 1 auto;
+  justify-content: flex-end;
+  padding-left: 25rpx;
+  padding-bottom: 70rpx;
+}
+.temNum{
+  font-size: 160rpx;
+  font-weight: bold;
+  width:60rpx;
+}
+.weathercon{
+  font-size: 50rpx;
+}
+/*33度*/
+.speed{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width:50%;
+}
+.feng,.shidu,.qiya{
+  width:32rpx;
+  height:30rpx;
+  margin: 0 auto;
+  padding-bottom: 15rpx;
+}
+.speedList{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+}
+.speedfont{
+  font-size: 24rpx;
+  padding-bottom: 15rpx;
+}
+.speedword{
+  font-size:30rpx;
+  font-weight: bold;
+}
+.speedLast{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+/*模态框*/
+.modelPic{
+  background:rgba(0,0,0,.7);
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: 999;
+}
+.pic{
+  width:588rpx;
+  height:688rpx;
+  position: absolute;
+  top:50%;
+  left:50%;
+  transform: translate(-50%,-50%);
+}
+.model{
+  width:100%;
+  height:100%;
+}
+.guanbi{
+  width:60rpx;
+  height: 60rpx;
+  position: absolute;
+  right:-8rpx;
+  top:-20rpx;
+}
+.tx{
+  font-size: 10rpx;
+}
+
+/*另外一个页面*/
+
+/*背景图片*/
+.bg{
+  width:750rpx;
+  height: 1201rpx;
+  position:absolute;
+  z-index: -100;
+}
+/*整体弹性布局*/
+.index{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width:100%;
+  height:1201rpx;
+}
+/*第一块弹性布局*/
+.week-weather{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background: rgba(0,0,0,.2);
+  margin:20rpx;
+  padding:20rpx;
+  border-radius: 5px;
+  margin-bottom: 0;
+}
+/*实际天气*/
+.show-weather{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding:0 10rpx;
+  text-align: center;
+  margin-bottom: 10rpx;
+}
+.weater-wind{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.week-title{
+  color:#fff;
+  font-size: 32rpx;
+  border-bottom:1px solid #BEC0C1;
+  padding-bottom:15rpx;
+  font-family: MicroSoft Yahei;
+  margin-bottom:20rpx;
+}
+.wpic{
+  width:33rpx;
+  height:33rpx;
+}
+
+/*第一行的天气阴晴*/
+.weater-item{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+}
+.weater-item-w{
+  color:#fff;
+  font-size: 24rpx;
+  font-family: MicroSoft Yahei;
+  margin-bottom:10rpx;
+}
+.weater-item-d{
+   color:#fff;
+   font-size: 24rpx;
+   font-family: MicroSoft Yahei;
+   margin-bottom:16rpx;
+}
+
+/*第一行的风速*/
+.windf{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+  margin-left:-40rpx;
+  margin-right: 20rpx;
+}
+.imp{
+  margin-left:-0;
+  margin-right: 0;
+}
+.feng{
+  width:32rpx;
+  height:30rpx;
+  align-self: center;
+  margin-bottom:18rpx;
+}
+
+/*第二行的内容*/
+.weather-helper{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background: rgba(0,0,0,.2);
+  border-radius: 5px;
+  margin: 20rpx;
+  padding: 0 20rpx;
+  margin-top:0;
+}
+.helper{
+  color:#fff;
+  font-family: MicroSoft Yahei;
+  border-bottom:1px solid #BEC0C1;
+  padding-bottom:17rpx;
+  font-size: 32rpx;
+}
+
+.weather-pic{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.wpimage{
+  width:86rpx;
+  height:86rpx;
+  margin-bottom:20rpx;
+}
+.wpi{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-top: 20rpx;
+  text-align: center;
+  padding:20rpx 20rpx;
+}
+/*按钮*/
+.btn{
+  width:331rpx;
+  height:79rpx;
+}
+.btn-container{
+  text-align: center;
+  margin: 0 auto;
+}
+/*底部按钮*/
+.bworld{
+  color:#fff;
+  text-align: center;
+  padding-bottom:60rpx;
+  font-size: 25rpx;
+  font-family: MicroSoft Yahei;
+}

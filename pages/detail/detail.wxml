@@ -1,0 +1,42 @@
+<view class="detail">
+    <!--第一行，左右-->
+    <view class="weather">
+      <view class="weather-left">
+          <image src="../../image/touxiang.png" class="touxiang"></image>
+          <view class="weater-left-date">
+              <text class="weater-left-date-d">2017-06-02</text>
+              <text class="weater-left-date-s">SUM</text>
+          </view>
+      </view>
+      <view class="weather-right">
+          <image src="../../image/duoyun.png" class="duoyun"></image>
+          <view class="weather-right-con">
+            <view class="weather-right-con-tem">33°</view>
+            <view class="weather-right-con-du">
+                <view class="weather-bg">
+                         <image src="../../image/feng.png" class="weather-pic"></image>
+                  <text class="tx">5级</text>
+                </view>
+                <view class="weather-bg">
+                  <image src="../../image/shidu.png" class="weather-pic"></image>
+                  <text class="tx">23%</text>
+                </view>
+                <view class="weather-bg">
+                  <image src="../../image/qiya.png" class="weather-pic"></image>
+                  <text class="tx">1000hpa</text>
+                </view>
+            </view>
+          </view>
+      </view>
+    </view>
+    <!--图片-->
+    <view class="">
+      <image src="../../image/fenxiamhye.png" class="centerPic"></image>
+    </view>
+    <!--二维码-->
+    <view class="berweima">
+       <image src="../../image/erweima.png" class="erwei"></image>
+    </view>
+    <!--文字-->
+    <text class="bottomword">喜欢的话就和朋友一起分享吧</text>
+</view>
